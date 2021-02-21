@@ -1,0 +1,20 @@
+.d-flex {
+    display: flex;
+}
+.img-respons {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.b-gallery {
+    max-width: 800px;
+    &__preview {
+        display: flex;
+    }
+    &__big-img {
+        padding: 0.2rem;
+    }
+    &__small-img {
+        padding: 0 0.2rem;
+    }
+}
