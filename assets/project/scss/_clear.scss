@@ -1,3 +1,67 @@
+:root {
+    --vh: 1vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+nav,
+footer,
+header,
+aside,
+article,
+section {
+    display: block;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -10,27 +74,22 @@ img {
     max-width: 100%;
     height: auto;
 }
-a.active.focus,
-a.active:focus,
-a.focus,
-a:active.focus,
+a {
+    transition: 0.3s;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    transition: 0.3s;
+}
 a:active:focus,
-a:focus,
-button.active.focus,
-button.active:focus,
-button.focus,
-button:active.focus,
-button:active:focus,
-button:focus,
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
-    outline: 0 !important;
-    outline-color: transparent !important;
-    outline-width: 0 !important;
-    outline-style: none !important;
-    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+a:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
 }
