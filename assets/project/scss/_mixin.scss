@@ -15,3 +15,8 @@ $maxWidth: 1400;
 // указать размеры для ПК и для Мобилки - т.е максимальный и минимальный размер шрифта
 // @include adaptiv-font(40, 24);
 // }
+// @for $index from 1 through 6 {
+//     h#{$index}.heading {
+//         font-size: (42px / $index);
+//     }
+// }
