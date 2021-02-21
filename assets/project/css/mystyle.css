@@ -22,7 +22,9 @@
 }
 
 html {
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
 }
 
 html,
@@ -31,7 +33,7 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -220,7 +222,47 @@ body {
   background-size: cover;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
   min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.intro__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .intro__container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro__container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro__container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro__container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro__container {
+    max-width: 1320px;
+  }
 }
 
 .menu {

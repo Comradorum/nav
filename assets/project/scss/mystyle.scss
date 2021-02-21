@@ -20,13 +20,45 @@ body {
     background-position: bottom;
     background-size: cover;
     min-height: 100vh;
-    min-height: -webkit-fill-available;
+    min-height: fill-available;
     min-height: calc(var(--vh, 1vh) * 100);
+
+    &__container {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (min-width: 1400px) {
+            max-width: 1320px;
+        }
+    }
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
+    &__block {
+    }
+    &__link {
+    }
+    &__logo {
+    }
     &__list {
         display: flex;
+    }
+    &__item {
     }
 }
