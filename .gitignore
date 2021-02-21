@@ -40,3 +40,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+
+assets/project/fonts
+assets/project/fonts/*
+assets/project/bg-img
+assets/project/bg-img/*
