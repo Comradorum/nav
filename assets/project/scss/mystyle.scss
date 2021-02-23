@@ -1,4 +1,4 @@
-@import "_clear"; // сброс
+// @import "_clear";
 @import "_grid"; // сетка
 @import "_fonts"; // подключение шрифтов
 @import "_mixin"; // миксины
@@ -11,54 +11,58 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 1rem;
 }
 
-.intro {
-    // background-color: $green-1;
-    background-image: url("../bg-img/intro.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 100vh;
-    min-height: fill-available;
-    min-height: calc(var(--vh, 1vh) * 100);
-
-    &__container {
-        width: 100%;
-        padding-right: var(--bs-gutter-x, 0.75rem);
-        padding-left: var(--bs-gutter-x, 0.75rem);
-        margin-right: auto;
-        margin-left: auto;
-        @media screen and (min-width: 576px) {
-            max-width: 540px;
-        }
-        @media screen and (min-width: 768px) {
-            max-width: 720px;
-        }
-        @media screen and (min-width: 992px) {
-            max-width: 960px;
-        }
-        @media screen and (min-width: 1200px) {
-            max-width: 1140px;
-        }
-        @media screen and (min-width: 1400px) {
-            max-width: 1320px;
-        }
+.bar {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid $red-1;
+    border-radius: 4px;
+    padding: 8px;
+    transition: 0.4s;
+    &:hover {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        border: 1px solid $orange-1;
+    }
+    &__line-1 {
+        width: 35px;
+        height: 5px;
+        background-color: $red-1;
+        // margin: 6px 0;
+        transition: 0.4s;
+    }
+    &__line-2 {
+        width: 35px;
+        height: 5px;
+        background-color: $red-1;
+        margin-top: 6px;
+        transition: 0.4s;
+    }
+    &__line-3 {
+        width: 35px;
+        height: 5px;
+        background-color: $red-1;
+        margin-top: 6px;
+        transition: 0.4s;
     }
 }
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    &__block {
-    }
-    &__link {
-    }
-    &__logo {
-    }
-    &__list {
-        display: flex;
-    }
-    &__item {
-    }
-}
+// .bar_change {
+//     .bar__line-1 {
+//         width: 26px;
+//         height: 4px;
+//         transform: rotate(-45deg) translate(-8px, 8px);
+//         margin: 0;
+//     }
+//     .bar__line-2 {
+//         width: 26px;
+//         height: 4px;
+//         opacity: 0;
+//     }
+//     .bar__line-3 {
+//         width: 26px;
+//         height: 4px;
+//         transform: rotate(45deg) translate(-8px, -8px);
+//         margin: 0;
+//     }
+// }
