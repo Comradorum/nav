@@ -28,6 +28,7 @@ html {
 
 html,
 body {
+  font-family: "Roboto", sans-serif;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -210,11 +211,6 @@ a:focus {
   font-style: normal;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
 .bar {
   display: inline-block;
   cursor: pointer;
@@ -223,11 +219,10 @@ body {
   padding: 8px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  top: 0;
-  right: 0;
   position: absolute;
   top: 16px;
   right: 0;
+  z-index: 100;
 }
 
 .bar:hover {

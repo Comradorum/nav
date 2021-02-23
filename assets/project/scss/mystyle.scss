@@ -9,12 +9,15 @@
 // подключен локально: Roboto: (300, 400, 500, 700). При необходимости 900 - расскоментировать в fonts.scss
 // размеры адаптивных шрифтов указать в _mixin.scss (16 строка). Пример подключения к тегам в (14-16 строке)
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-}
-
 // ############################ BAR #######################
+// меню использовать совместно со сбросом стилей, во избежании гор.скрола или:
+// *,
+// *:before,
+// *:after {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
 .bar {
     display: inline-block;
     cursor: pointer;
@@ -22,11 +25,10 @@ body {
     border-radius: 4px;
     padding: 8px;
     transition: 0.4s;
-    top: 0;
-    right: 0;
     position: absolute;
     top: 16px;
     right: 0;
+    z-index: 100;
 
     &:hover {
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
