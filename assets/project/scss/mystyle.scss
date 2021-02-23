@@ -24,7 +24,6 @@ body {
     transition: 0.4s;
     top: 0;
     right: 0;
-    margin-right: 1rem;
     position: absolute;
     top: 16px;
     right: 0;
@@ -60,6 +59,35 @@ body {
     &__row {
         @media screen and (max-width: 992px) {
             display: none;
+            width: 100%;
+        }
+    }
+    .menu_mobil {
+        @media screen and (max-width: 992px) {
+            display: block;
+            position: absolute;
+            top: 90px;
+        }
+    }
+    &__list {
+        display: flex;
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            background-color: $orange-1;
+            padding: 1rem 0.78rem;
+        }
+    }
+    &__item {
+        margin: 0.5rem 0;
+        @media screen and (max-width: 992px) {
+            margin: 0.1rem 0;
+        }
+    }
+    &__link {
+        padding: 0.78rem 1rem;
+        @media screen and (max-width: 992px) {
+            display: block;
+            padding: 0.78rem 2rem;
         }
     }
 }
