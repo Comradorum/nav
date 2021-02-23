@@ -123,28 +123,20 @@ body {
   border: 1px solid #ffc457;
 }
 
-.bar__line-1 {
-  width: 35px;
-  height: 5px;
-  background-color: #f04e3c;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.bar:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.bar__line-2 {
-  width: 35px;
-  height: 5px;
-  background-color: #f04e3c;
+.bar__line:not(:first-child) {
   margin-top: 6px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.bar__line-3 {
+.bar__line {
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: #f04e3c;
-  margin-top: 6px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

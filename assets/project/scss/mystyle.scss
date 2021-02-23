@@ -13,7 +13,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
 }
-
+// ############################ BAR #######################
 .bar {
     display: inline-block;
     cursor: pointer;
@@ -25,44 +25,18 @@ body {
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         border: 1px solid $orange-1;
     }
-    &__line-1 {
-        width: 35px;
-        height: 5px;
-        background-color: $red-1;
-        // margin: 6px 0;
-        transition: 0.4s;
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     }
-    &__line-2 {
-        width: 35px;
-        height: 5px;
-        background-color: $red-1;
+    &__line:not(:first-child) {
         margin-top: 6px;
-        transition: 0.4s;
     }
-    &__line-3 {
+    &__line {
         width: 35px;
-        height: 5px;
+        height: 4px;
         background-color: $red-1;
-        margin-top: 6px;
         transition: 0.4s;
     }
 }
-// .bar_change {
-//     .bar__line-1 {
-//         width: 26px;
-//         height: 4px;
-//         transform: rotate(-45deg) translate(-8px, 8px);
-//         margin: 0;
-//     }
-//     .bar__line-2 {
-//         width: 26px;
-//         height: 4px;
-//         opacity: 0;
-//     }
-//     .bar__line-3 {
-//         width: 26px;
-//         height: 4px;
-//         transform: rotate(45deg) translate(-8px, -8px);
-//         margin: 0;
-//     }
-// }
+// #############################
