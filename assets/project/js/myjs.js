@@ -9,4 +9,8 @@ window.addEventListener('resize', () => {
 
 document.querySelector('.bar').onclick = () => {
     document.querySelector('.menu__row').classList.toggle('menu_mobil');
+    // yyy
+
+    // yyy
 }
+
