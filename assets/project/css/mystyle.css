@@ -201,6 +201,10 @@ a:focus {
   margin-top: var(--bs-gutter-y);
 }
 
+.my-1rem {
+  margin: 1rem 0;
+}
+
 @font-face {
   font-family: "Roboto";
   font-display: swap;
@@ -371,4 +375,13 @@ a:focus {
   .block-col-3 {
     width: 33.3333333333%;
   }
+}
+
+.theme-1 {
+  background-color: #e7e7e7;
+  height: 100%;
+}
+
+.block-content {
+  padding: 1rem;
 }
