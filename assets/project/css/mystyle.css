@@ -385,3 +385,41 @@ a:focus {
 .block-content {
   padding: 1rem;
 }
+
+.form {
+  margin: 3rem 0;
+}
+
+.form__title {
+  margin-bottom: 2rem;
+}
+
+.form__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  margin: 0.3rem 0;
+}
+
+.form__column-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea[name="text"] {
+  background-color: #e7e7e7;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 0.3rem;
+}
