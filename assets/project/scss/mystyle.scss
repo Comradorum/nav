@@ -18,82 +18,82 @@
 //     -moz-box-sizing: border-box;
 //     box-sizing: border-box;
 // }
-.bar {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid $red-1;
-    border-radius: 4px;
-    padding: 8px;
-    transition: 0.4s;
-    position: absolute;
-    top: 16px;
-    right: 0;
-    z-index: 100;
+// .bar {
+//     display: inline-block;
+//     cursor: pointer;
+//     border: 1px solid $red-1;
+//     border-radius: 4px;
+//     padding: 8px;
+//     transition: 0.4s;
+//     position: absolute;
+//     top: 16px;
+//     right: 0;
+//     z-index: 100;
 
-    &:hover {
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-        border: 1px solid $orange-1;
-    }
-    &:focus {
-        outline: 0;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    }
-    &__line:not(:first-child) {
-        margin-top: 6px;
-    }
-    &__line {
-        width: 35px;
-        height: 4px;
-        background-color: $red-1;
-        transition: 0.4s;
-    }
-    @media screen and (min-width: 992px) {
-        display: none;
-    }
-}
+//     &:hover {
+//         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+//         border: 1px solid $orange-1;
+//     }
+//     &:focus {
+//         outline: 0;
+//         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+//     }
+//     &__line:not(:first-child) {
+//         margin-top: 6px;
+//     }
+//     &__line {
+//         width: 35px;
+//         height: 4px;
+//         background-color: $red-1;
+//         transition: 0.4s;
+//     }
+//     @media screen and (min-width: 992px) {
+//         display: none;
+//     }
+// }
 // #############################
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1rem 0;
-    &__row {
-        @media screen and (max-width: 992px) {
-            display: none;
-            width: 100%;
-            animation: fadeInFromNone 0.4s ease-out;
-        }
-    }
-    .menu_mobil {
-        @media screen and (max-width: 992px) {
-            display: block;
-            position: absolute;
-            top: 90px;
-        }
-    }
-    &__list {
-        display: flex;
-        @media screen and (max-width: 992px) {
-            flex-direction: column;
-            background-color: $orange-1;
-            padding: 1rem 0.78rem;
-        }
-    }
-    &__item {
-        margin: 0.5rem 0;
-        @media screen and (max-width: 992px) {
-            margin: 0.1rem 0;
-        }
-    }
-    &__link {
-        padding: 0.78rem 1rem;
-        @media screen and (max-width: 992px) {
-            display: block;
-            padding: 0.78rem 2rem;
-        }
-    }
-}
+// .menu {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: relative;
+//     padding: 1rem 0;
+//     &__row {
+//         @media screen and (max-width: 992px) {
+//             display: none;
+//             width: 100%;
+//             animation: fadeInFromNone 0.4s ease-out;
+//         }
+//     }
+//     .menu_mobil {
+//         @media screen and (max-width: 992px) {
+//             display: block;
+//             position: absolute;
+//             top: 90px;
+//         }
+//     }
+//     &__list {
+//         display: flex;
+//         @media screen and (max-width: 992px) {
+//             flex-direction: column;
+//             background-color: $orange-1;
+//             padding: 1rem 0.78rem;
+//         }
+//     }
+//     &__item {
+//         margin: 0.5rem 0;
+//         @media screen and (max-width: 992px) {
+//             margin: 0.1rem 0;
+//         }
+//     }
+//     &__link {
+//         padding: 0.78rem 1rem;
+//         @media screen and (max-width: 992px) {
+//             display: block;
+//             padding: 0.78rem 2rem;
+//         }
+//     }
+// }
 // ############### BLOG-col #############
 // img media mobil до 340 от 400, от 600, от 760
 // размер фото, 340, 480, 600, 768
