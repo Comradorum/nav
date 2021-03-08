@@ -18,6 +18,7 @@
 //     -moz-box-sizing: border-box;
 //     box-sizing: border-box;
 // }
+
 // .bar {
 //     display: inline-block;
 //     cursor: pointer;
@@ -94,6 +95,79 @@
 //         }
 //     }
 // }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.87rem 0;
+
+    &__row {
+        @media screen and (max-width: 992px) {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100px);
+            transition: all 0.5s ease;
+            max-width: 280px;
+            margin: auto;
+            position: absolute;
+            top: 30vh;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .menu_mobil {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    &__list {
+        display: flex;
+        @media screen and (max-width: 992px) {
+            display: block;
+            background-color: $orange-1;
+            padding: 1rem 2rem;
+        }
+    }
+    &__link {
+        padding: 0.78rem 1rem;
+        @media screen and (max-width: 992px) {
+            display: block;
+            padding: 0.6rem 2rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+.bar {
+    cursor: pointer;
+    border: 1px solid $red-1;
+    border-radius: 4px;
+    padding: 8px;
+    transition: 0.4s;
+    &__line {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: $red-1;
+        transition: 0.4s;
+    }
+    &__line:not(:first-child) {
+        margin-top: 6px;
+    }
+    &:hover {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        border: 1px solid $orange-1;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+}
+
 // ############### BLOG-col #############
 // img media mobil до 340 от 400, от 600, от 760
 // размер фото, 340, 480, 600, 768
